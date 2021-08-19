@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" class="main-form">
+        <h1 class="header">Sorting Algorithms</h1>
+        <label for="input-size">Enter the Input Size:</label>
+        <input type="number" id="input-field" min="0" max="100000" placeholder="Ex: 100" required>  
+        <br>
+        <br>
+        <button type="button" id="generate-button">Generate Numbers</button>
+        <div id="rand-nos-generated">
+        </div>
+        <h4 class="select-header">Select the sorting Algorithms to view the runtimes:</h4>
+        <div class="checkboxes-div">
+            <div class="inner-div">
+                <label><input type="checkbox" id="mergesort" value="mergesort" class="checkbox-field">Merge Sort</label>
+            </div>
+            <div class="inner-div">
+                <label><input type="checkbox" id="heapsort" value="heapsort" class="checkbox-field">Heap Sort</label>
+            </div>
+            <div class="inner-div">
+                <label><input type="checkbox" id="regularquicksort" value="regularquicksort" class="checkbox-field">Quick Sort</label>
+            </div>
+            <div class="inner-div">
+                <label><input type="checkbox" id="threewayquicksort" value="threewayquicksort" class="checkbox-field">3-Median Quick Sort</label>
+            </div>
+            <div class="inner-div">
+                <label><input type="checkbox" id="insertionsort" value="insertionsort" class="checkbox-field">Insertion Sort</label>
+            </div>
+            <div class="inner-div">
+                <label><input type="checkbox" id="selectionsort" value="selectionsort" class="checkbox-field">Selection Sort</label>
+            </div>
+            <div class="inner-div">
+                <label><input type="checkbox" id="bubblesort" value="bubblesort" class="checkbox-field">Bubble Sort</label>
+            </div>
+        </div><br><br>
+        <div class="button-div">
+            <button type="button" id="submit-button">Submit</button>
+        </div>
+        <div id="sorted-output-array">
+        </div>
+        <h4>Runtimes of Selected Algorithms:</h4>
+        <div id="output-div">
+        </div>
+    </form>
+</body>
+<script src="script.js" type="text/javascript"></script>
+</html>
